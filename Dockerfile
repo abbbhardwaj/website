@@ -2,6 +2,8 @@ From python:3
 
 RUN pip install django
 
+RUN pip install gTTS
+
 RUN mkdir /code
 
 WORKDIR /code
