@@ -5,9 +5,9 @@ RUN apt-get install python
 
 RUN pip install django
 
-COPY Ayush Website /opt/app/Ayush Website
+COPY website /opt/app/Website
 
-WORKDIR /opt/app/Ayush Website
+WORKDIR /opt/app/Website
 
-CMD ["python", "/opt/app/Ayush Website/manage.py runserver"]
+CMD ["python", "manage.py runserver"]
 
