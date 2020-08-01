@@ -2,9 +2,9 @@ From python:3
 
 RUN pip install django
 
-COPY . /opt/app/Website
+COPY . /opt/app
 
-WORKDIR /opt/app/Website
+WORKDIR /opt/app/website
 
-CMD ["python", "manage.py runserver"]
+CMD python manage.py runserver
 
