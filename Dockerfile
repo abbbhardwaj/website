@@ -2,7 +2,11 @@ From python:3
 
 RUN pip install django
 
-COPY . /opt/app/
+WORKDIR /opt/app
 
-CMD python manage.py runserver
+COPY . /website
+
+RUN ls /
+
+ENTRYPOINT: ["python3","manage.py runserver"]
 
