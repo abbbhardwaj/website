@@ -10,4 +10,6 @@ COPY . /code/
 
 RUN ls /code/
 
-CMD ["/code/Website/python manage.py runserver"]
+WORKDIR /code/Website
+
+CMD python manage.py runserver
