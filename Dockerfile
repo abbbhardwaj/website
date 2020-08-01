@@ -1,8 +1,4 @@
-From ubuntu
-
-RUN apt-get clean && apt-get update
-
-RUN apt-get -y install python3
+From python:3
 
 RUN pip install django
 
