@@ -1,4 +1,4 @@
-From Ubuntu
+From ubuntu
 
 RUN apt-get update && apt-get install python
 
