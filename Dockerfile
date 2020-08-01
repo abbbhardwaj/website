@@ -2,7 +2,7 @@ From python:3
 
 RUN pip install django
 
-RUN pip install gTTS
+RUN pip install gTTS && pip install playsound
 
 RUN mkdir /code
 
