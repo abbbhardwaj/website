@@ -8,5 +8,5 @@ COPY . /website
 
 RUN ls /
 
-ENTRYPOINT: ["python3","manage.py runserver"]
+ENTRYPOINT ["python3","manage.py runserver"]
 
