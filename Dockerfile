@@ -2,7 +2,7 @@ From python:3
 
 RUN pip install django
 
-COPY . /opt/app
+COPY website ./opt/app/website
 
 WORKDIR /opt/app/website
 
