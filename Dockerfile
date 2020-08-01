@@ -8,4 +8,4 @@ ADD . /opt/app
 
 RUN ls /
 
-CMD python manage.py runserver
+CMD /opt/app/python manage.py runserver
