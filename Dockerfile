@@ -2,12 +2,10 @@ From python:3
 
 RUN pip install django
 
-WORKDIR /opt/app
-
-ADD . /opt/app
+COPY . /opt/app/website
 
 WORKDIR /opt/app/website
 
-RUN ls /
+RUN ls /opt/app
 
-CMD python manage.py runserver
+CMD ["/opt/app/website/python", manage.py runserver"]
