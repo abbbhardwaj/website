@@ -1,0 +1,130 @@
+html, body{
+margin:0;
+padding:0;
+width:100%
+}
+
+body{
+width:100%
+height:100vh;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+display:table;
+font-family:Montserrat;
+
+}
+.header{
+position: absolute;
+top:20%;
+left:50%;
+transform: translate(-50%, -50%);
+text-align:center;
+}
+.header h1{
+font-family: sans-serif;
+color:black;
+font-size:120px;
+font-weight:500;
+margin-bottom: 8px;
+}
+
+.srch{
+position: absolute;
+top:40%;
+left:50%;
+transform: translate(-50%, -50%);
+text-align:center;
+}
+
+input[type=text] {
+  width: 330px;
+  height:50px;
+  text-color:yellow;
+  font-size: 30px;
+  color:#red;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 400px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: MediumAquamarine;
+  opacity: 1;
+  font-size:30px;
+  }
+
+.srch .voice{
+position: absolute;
+top:15%;
+left:80%;
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+    padding: 0 8px;
+    width: 40px;
+    line-height: 44px;
+    font-color:black;
+}
+.srch .voice .imgMic {
+    background: url(//www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
+    height: 40px;
+    width: 30px;
+    background-size: 34px;
+}
+
+.btn{
+position: absolute;
+top:51%;
+left:50%;
+transform: translate(-50%, -50%);
+text-align:center;
+}
+
+.btn .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: pink;
+  border: 1px solid;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

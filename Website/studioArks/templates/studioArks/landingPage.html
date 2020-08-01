@@ -1,0 +1,28 @@
+{% load static %}
+<html lang="en">
+<head class="head">
+    <meta charset="UTF-8">
+    <title>StudioArks</title>
+    <link rel="stylesheet" href="{% static 'css/look.css' %}">
+     <div class="header">
+        <h1>T<span style="color:black;font-family:'Comic Sans MS';font-size:80px;"><i>y</i></span>PO</h1>
+        </div>
+</head>
+<body>
+
+<div class="wrapper">
+    <form action="{% url 'home' %}" method="post">
+        {% csrf_token %}
+    <div class="srch">
+   <input type="text" name="search" placeholder="Type a word....">
+        <div class="voice" area-label="Search by voice" role="button">
+            <span class="imgMic"></span>
+            </div><br>
+       </div>
+    <div class="btn">
+        <button class="button" style="vertical-align:middle"><b><span>HIT ME </span></b></button>
+    </div>
+        </form>
+</div>
+</body>
+</html>

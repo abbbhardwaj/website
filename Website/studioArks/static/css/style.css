@@ -1,0 +1,88 @@
+html, body,head{
+margin:0;
+padding:0;
+width:100%
+}
+
+head{
+background-color:black;}
+
+body{
+width:100%
+height:100vh;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+display:table;
+font-family:Montserrat;
+background-image: url("/static/img/officebw.jpg");
+}
+
+.nav{
+position:fixed;
+top:0;
+left:0;
+margin:0;
+padding:0;
+width:100%;
+height:80px;
+border-bottom:1px solid rgba(255,255,255,0.5);
+}
+
+.logo{
+float:left;
+font-size:16px;
+color:#fff;
+line-height:80px;
+line-spacing:1px;
+}
+
+.menu{
+float:right;
+line-height:60px;
+margin: 0 6em;
+}
+
+.menu ul{
+list-style:none;
+}
+
+.menu ul li{
+display:inline-block;
+}
+
+.menu ul li a{
+text-decoration:none;
+color:white;
+font-size:25px;
+font-weight:lighter;
+padding:18px 20px;
+
+}
+
+
+.header{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+text-align:center;
+
+}
+
+.header h1{
+color:black;
+font-size:46px;
+font-weight:400;
+margin-bottom: 8px;
+}
+
+.header button{
+color:white;
+background:#009fb8;
+padding: 18px 38px;
+border:none;
+font-size:18px;
+margin-top:40px;
+border-radius:5px;
+}

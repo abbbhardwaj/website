@@ -1,0 +1,13 @@
+From Ubuntu
+
+RUN apt-get update
+RUN apt-get install python
+
+RUN pip install django
+
+COPY Ayush Website /opt/app/Ayush Website
+
+WORKDIR /opt/app/Ayush Website
+
+CMD ["python", "/opt/app/Ayush Website/manage.py runserver"]
+
