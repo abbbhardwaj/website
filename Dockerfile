@@ -1,6 +1,6 @@
 From ubuntu
 
-RUN apt install python:3
+RUN apt-get install python
 
 RUN pip install django
 
