@@ -8,4 +8,4 @@ WORKDIR /opt/app/website
 
 RUN ls /opt/app
 
-CMD ["/opt/app/website/python", manage.py runserver"]
+CMD ["/opt/app/website/python", "manage.py runserver"]
