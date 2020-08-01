@@ -6,6 +6,8 @@ WORKDIR /opt/app
 
 ADD . /opt/app
 
+WORKDIR /opt/app/website
+
 RUN ls /
 
-CMD /opt/app/python manage.py runserver
+CMD python manage.py runserver
