@@ -4,9 +4,8 @@ RUN pip install django
 
 WORKDIR /opt/app
 
-COPY . /website
+ADD . /opt/app
 
 RUN ls /
 
-ENTRYPOINT ["python3","manage.py runserver"]
-
+CMD python manage.py runserver
