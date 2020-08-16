@@ -14,4 +14,6 @@ RUN ls /code/
 
 WORKDIR /code/Website
 
+CMD python manage.py migrate
+
 CMD python manage.py runserver
